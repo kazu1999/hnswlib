@@ -111,7 +111,7 @@ setup(
     version=__version__,
     description='hnswlib',
     author='Yury Malkov and others',
-    url='https://github.com/yurymalkov/hnsw',
+    url='https://github.com/kazu1999/hnswlib',
     long_description="""hnsw""",
     ext_modules=ext_modules,
     install_requires=['numpy'],
