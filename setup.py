@@ -107,10 +107,10 @@ class BuildExt(build_ext):
 
 
 setup(
-    name='hnswlib',
+    name='pinpin',
     version=__version__,
-    description='hnswlib',
-    author='Yury Malkov and others',
+    description='pinpin',
+    author='kazupon',
     url='https://github.com/kazu1999/hnswlib',
     long_description="""hnsw""",
     ext_modules=ext_modules,
