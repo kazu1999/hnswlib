@@ -5,6 +5,7 @@ import numpy as np
 
 import hnswlib
 
+from tslearn.metrics import dtw
 
 def get_dist(metric, pt1, pt2):
     if metric == 'l2':
@@ -13,6 +14,8 @@ def get_dist(metric, pt1, pt2):
         return 1. - np.sum(np.multiply(pt1, pt2))
     elif metric == 'cosine':
         return 1. - np.sum(np.multiply(pt1, pt2)) / (np.sum(pt1**2) * np.sum(pt2**2))**.5
+    elif metric == 'dtw':
+        return dtw(pt1, pt2)
 
 
 def brute_force_distances(metric, items, query_items, k):
