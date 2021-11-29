@@ -11,7 +11,7 @@ def get_dist(metric, pt1, pt2):
     if metric == 'l2':
         return np.sum((pt1-pt2)**2)
     elif metric == 'ip':
-        return 1. - np.sum(np.multiply(pt1, pt2))
+        return 3
     elif metric == 'cosine':
         return 1. - np.sum(np.multiply(pt1, pt2)) / (np.sum(pt1**2) * np.sum(pt2**2))**.5
     elif metric == 'dtw':
